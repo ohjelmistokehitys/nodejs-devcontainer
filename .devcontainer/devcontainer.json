@@ -8,5 +8,10 @@
 		"CHOKIDAR_USEPOLLING": "true",
 		// Poll for file changes every second (1000 ms) instead of the default 100 ms. Reduces CPU usage.
 		"CHOKIDAR_INTERVAL": "1000"
-	}
+	},
+	"mounts": [
+		// mounts the node_modules folder as a volume to prevent host and container node_modules from conflicting with each other
+		"type=volume,source=node_modules_cache,target=${containerWorkspaceFolder}/node_modules/"
+	],
+	"postCreateCommand": "sudo chown node:node node_modules -R"
 }
