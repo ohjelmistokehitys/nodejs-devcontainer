@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-devcontainer",
+  "version": "1.0.0",
+  "description": "This repository provides a [development container](https://code.visualstudio.com/docs/remote/containers) that includes all the necessary tools and dependencies for using Node.js and related technologies. The container is configured to work with Visual Studio Code's Remote Containers extension, allowing you to develop and run tests in a consistent environment without worrying about local setup issues. This container works both in local development using Docker and in [GitHub Codespaces](https://github.com/features/codespaces), which provides a cloud-based development environment.",
+  "homepage": "https://github.com/ohjelmistokehitys/nodejs-devcontainer#readme",
+  "bugs": {
+    "url": "https://github.com/ohjelmistokehitys/nodejs-devcontainer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohjelmistokehitys/nodejs-devcontainer.git"
+  },
+  "license": "CC-BY-NC-4.0",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
